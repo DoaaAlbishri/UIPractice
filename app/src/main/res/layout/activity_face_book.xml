@@ -5,24 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/gray"
     tools:context=".FaceBook">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="facebook"
+        android:layout_marginTop="20dp"
+        />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Facebook helps you connect and share with the people in your life."
+        android:layout_marginTop="20dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -30,7 +47,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Email address or Phone"
+            android:layout_marginTop="5dp"
+            />
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
@@ -38,30 +57,52 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="password"
+            android:layout_marginTop="5dp"
+            />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:backgroundTint="@color/blue"
+            android:text="Log in"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:textColor="@color/blue"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="Forgotten password?"
+            android:layout_marginTop="5dp"
+            />
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/green"
+            android:text="Create new account"
+            android:layout_marginTop="5dp"
+            />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Create a Page for a celebrity, band or business."
+        android:layout_marginTop="20dp"
+        />
 </LinearLayout>

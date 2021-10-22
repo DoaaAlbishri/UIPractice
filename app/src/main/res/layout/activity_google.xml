@@ -10,15 +10,25 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:layout_gravity="left"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/googlelogo_color_160x56dp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Create your Google Account" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -26,7 +36,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Firstname" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
@@ -34,26 +44,30 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="lastname" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:hint="Username @gmail.com"
+        />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="you can use letters, numbers &amp; periods" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:text="Use my current email adress instead" />
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
@@ -61,7 +75,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Password" />
 
     <EditText
         android:id="@+id/editTextTextPersonName11"
@@ -69,19 +83,20 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Confirm" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="20sp"
+        android:text="Use 8 or more characters with a mix of letters, numbers &amp; symbols" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CheckBox" />
+        android:text="Show password" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,14 +108,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="Sign in instead" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:backgroundTint="@color/blue"
+            android:text="Nwxt" />
     </LinearLayout>
 
 </LinearLayout>
